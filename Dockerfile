@@ -13,18 +13,18 @@ RUN jupyter nbextension enable --py widgetsnbextension
 
 WORKDIR /workspace
 COPY install_beamsearch_decoders.sh /workspace/install_beamsearch_decoders.sh
-COPY common_voice_6gram.bin /workspace/common_voice_6gram.bin
 COPY jarvis_api-1.1.0b0-py3-none-any.whl /workspace/jarvis_api-1.1.0b0-py3-none-any.whl
 COPY jarvis_client_example.ipynb /workspace/jarvis_client_example.ipynb
 COPY nemo_th_asr_demo.ipynb /workspace/nemo_th_asr_demo.ipynb
 COPY nemo_th_tts_demo.ipynb /workspace/nemo_th_tts_demo.ipynb
 COPY quartznet_5x3_th.yaml /workspace/quartznet_5x3_th.yaml
 COPY tacotron2_th.yaml /workspace/tacotron2_th.yaml
-COPY QuartzNet5x3_1e03_warm1000.nemo /workspace/QuartzNet5x3_1e03_warm1000.nemo
-COPY QuartzNet5x3_2e02_libri---val_wer=0.08-epoch=97.ckpt /workspace/QuartzNet5x3_2e02_libri---val_wer=0.08-epoch=97.ckpt
-COPY Tacotron2_deploy.nemo /workspace/Tacotron2_deploy.nemo
-COPY Tacotron2.nemo /workspace/Tacotron2.nemo
-COPY waveglow.ejrvs /workspace/waveglow.ejrvs
+COPY models/QuartzNet5x3_1e03_warm1000.nemo /workspace/QuartzNet5x3_1e03_warm1000.nemo
+COPY models/QuartzNet5x3_2e02_libri---val_wer=0.08-epoch=97.ckpt /workspace/QuartzNet5x3_2e02_libri---val_wer=0.08-epoch=97.ckpt
+COPY models/Tacotron2_deploy.nemo /workspace/Tacotron2_deploy.nemo
+COPY models/Tacotron2.nemo /workspace/Tacotron2.nemo
+COPY models/waveglow.ejrvs /workspace/waveglow.ejrvs
+COPY models/common_voice_6gram.bin /workspace/common_voice_6gram.bin
 COPY kenlm_utils.py /workspace/kenlm_utils.py
 
 RUN bash /workspace/install_beamsearch_decoders.sh
