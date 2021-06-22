@@ -25,5 +25,6 @@ COPY QuartzNet5x3_2e02_libri---val_wer=0.08-epoch=97.ckpt /workspace/QuartzNet5x
 COPY Tacotron2_deploy.nemo /workspace/Tacotron2_deploy.nemo
 COPY Tacotron2.nemo /workspace/Tacotron2.nemo
 COPY waveglow.ejrvs /workspace/waveglow.ejrvs
+COPY kenlm_utils.py /workspace/kenlm_utils.py
 
 RUN bash /workspace/install_beamsearch_decoders.sh
