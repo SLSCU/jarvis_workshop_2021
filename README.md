@@ -17,8 +17,8 @@ docker build -t workshop:v1 .
 docker run --runtime=nvidia -e \
             NVIDIA_VISIBLE_DEVICES=0 \
             --rm --shm-size=10g \
-            workshop:v1 \
             -p 8888:8888 \
+            workshop:v1 \
             jupyter notebook --ip='*' --NotebookApp.token='' --NotebookApp.password=''
 ```
 
@@ -29,10 +29,10 @@ docker run --runtime=nvidia -e \
             --rm --shm-size=10g \
             -v {full path of jarvis_workshop_2021 folder}/models:/work \
             workshop:v1 \
-            python nemo/scripts/export/convasr_to_enemo.py \
+            python NeMo/scripts/export/convasr_to_enemo.py \
             --enemo_file=/work/QuartzNet5x3_1e03_warm1000.enemo \
             --nemo_file=QuartzNet5x3_1e03_warm1000.nemo \
-            --onnx_file=/work/QuartzNet5x3_1e03_warm1000.onnx \
+            --onnx_file=/work/QuartzNet5x3_1e03_warm1000.onnx
 ```
 
 ## Jarvis
