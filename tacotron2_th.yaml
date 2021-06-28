@@ -138,13 +138,7 @@ trainer:
   check_val_every_n_epoch: 10
 
 exp_manager:
-# "/home/ekapolc/tae/workspace/tsync2_tacotron2_logs/Tacotron2/2021-04-24_04-13-08"
-  # explicit_log_dir: "/work/tsync2_tacotron2_logs/Tacotron2/2021-04-24_04-13-08/"
-  # explicit_log_dir: "/work/tsync2_tacotron2_logs/Tacotron2/2021-04-29_01-55-15"
-  exp_dir: "/work/tsync2_tacotron2_logs"
-  # explicit_log_dir: "/work/fake_t2_2/"
-  # explicit_log_dir: "/work/tsync2_tacotron2_logs/Tacotron2/2021-04-24_04-13-08"
-  # resume_if_exists: True
+  exp_dir: null
   name: ${name}
   create_tensorboard_logger: True
   create_checkpoint_callback: True

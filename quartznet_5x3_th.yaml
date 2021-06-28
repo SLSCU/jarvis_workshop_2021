@@ -182,16 +182,9 @@ trainer:
   log_every_n_steps: 1  # Interval of logging.
   val_check_interval: 1.0  # Set to 0.25 to check 4 times per epoch, or an int for number of iterations
 
-exp_manager:
-  # exp_dir: "/work/asr/logs/common_voice_th_quartznet_5x3"
+exp_manager:s
   exp_dir: null
   name: *name
-  # explicit_log_dir: "/work/common_voice_th_quartznet/QuartzNet15x5_th_5e04_warm1000_test/2021-05-07_00-14-27"
-  # explicit_log_dir: "/work/common_voice_th_quartznet/QuartzNet15x5_th_5e04_test/2021-05-06_14-52-44"
-  # explicit_log_dir: "/work/cv_th_quartnet_transfer/QuartzNet15x5_th_1e04_transfer/2021-04-29_02-37-31"
-  # explicit_log_dir: '/work/cv_th_quartnet_transfer/QuartzNet15x5_1e04_warm2000_new/2021-04-27_14-06-28'
-  # explicit_log_dir: '/work/cv_th_quartnet_transfer/QuartzNet15x5_th_1e04_transfer/2021-04-29_02-37-31'
-  # resume_if_exists: True
   create_tensorboard_logger: True
   create_checkpoint_callback: True
   checkpoint_callback_params:
