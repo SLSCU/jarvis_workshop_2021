@@ -26,6 +26,7 @@ COPY models/Tacotron2.nemo /workspace/Tacotron2.nemo
 COPY models/waveglow.ejrvs /workspace/waveglow.ejrvs
 COPY models/common_voice_6gram.bin /workspace/common_voice_6gram.bin
 COPY kenlm_utils.py /workspace/kenlm_utils.py
- 
+COPY common_voice_th_23657550_trim.wav /workspace/common_voice_th_23657550_trim.wav
+
 RUN git clone https://github.com/NVIDIA/NeMo.git
 RUN bash /workspace/install_beamsearch_decoders.sh
