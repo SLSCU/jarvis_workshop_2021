@@ -1,8 +1,8 @@
 # jarvis_workshop_2021
 
+Download other stuff such as model checkpoints at https://drive.google.com/file/d/102ZWKMF6FEcq1vrc9e07bhzfPPQ8SPbq/view?usp=sharing
 ```
 cd jarvis_workshop_2021
-wget https://jarvis-workshop.s3.ap-southeast-1.amazonaws.com/models.zip
 unzip models.zip
 ```
 
